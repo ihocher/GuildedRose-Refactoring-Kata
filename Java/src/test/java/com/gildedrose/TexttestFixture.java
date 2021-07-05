@@ -2,6 +2,9 @@ package com.gildedrose;
 
 public class TexttestFixture {
     public static void main(String[] args) {
+
+        int days = 2;
+
         System.out.println("OMGHAI!");
 
         Item[] items = new Item[] {
@@ -17,11 +20,6 @@ public class TexttestFixture {
                 new Item("Conjured Mana Cake", 3, 6) };
 
         GildedRose app = new GildedRose(items);
-
-        int days = 2;
-        if (args.length > 0) {
-            days = Integer.parseInt(args[0]) + 1;
-        }
 
         for (int i = 0; i < days; i++) {
             System.out.println("-------- day " + i + " --------");
